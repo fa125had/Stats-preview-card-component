@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --color-cardBg-darkDesaturatedBlue: hsl(244, 38%, 16%);
+  --color-accent-softViolet: hsl(277, 64%, 61%);
+  --color-mainHeadingStats-white: hsl(0, 0%, 100%);
+  --color-mainPragraph-slightlyTransparent: hsla(0, 0%, 100%, 0.75);
+  --color-statHeadings-slightlyTransparentWhite: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-mainHeadingStats-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  color: var(--color-mainPragraph-slightlyTransparent);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.mainBackground {
+  width: 1440px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-cardBg-darkDesaturatedBlue);
+}
+
+.orgnizer {
+  max-height: 100vh;
+  /* max-width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.headerContainer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  z-index: 1;
+}
+
+#heroImg {
+  max-width: 100%;
+  display: block;
+}
+
+#accentLayer {
+  position: absolute;
+  padding: 10rem;
+  background-color: hsla(277, 100%, 40%, 0.5);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.contentBox {
+  padding: 2rem 2rem;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+}
+
+.hilightWord {
+  color: var(--color-accent-softViolet);
+  font-size: 2.2rem;
+  margin: 0 0.5rem;
+}
+
+.contentBox h1 {
+  font-size: 2.3rem;
+  text-align: left;
+  padding: 0 3rem;
+  line-height: 1.2;
+}
+
+.contentBox p {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--color-mainPragraph-slightlyTransparent);
+  padding: 1.5rem 3rem;
+}
+
+.stats {
+  max-width: 100%;
+  display: flex;
+  padding: 1rem 4.5rem;
+  justify-content: space-between;
+}
+
+.stats h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  color: var(--color-mainHeadingStats-white);
+}
+
+.stats p {
+  color: var(--color-statHeadings-slightlyTransparentWhite);
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 375px) {
+  body {
+    display: block;
+    background-color: #000;
+  }
+
+  .mainBackground {
+    max-width: 375px;
+    height: 100vh;
+    display: block;
+    overflow: visible;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 375px;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .headerContainer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  #heroImg {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #accentLayer {
+    position: absolute;
+    top: 0;
+    background-color: hsla(277, 100%, 40%, 0.5);
+    height: 100%;
+    width: 100%;
+  }
+
+  .contentBox {
+    max-width: 100%;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 0;
+  }
+
+  .hilightWord {
+    color: var(--color-accent-softViolet);
+    font-size: 2rem;
+    /* margin: 0 1rem; */
+  }
+
+  .contentBox h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0.3rem;
+    line-height: 1.2;
+  }
+
+  .contentBox p {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--color-mainPragraph-slightlyTransparent);
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .stats {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .stats h2 {
+    text-align: center;
+  }
+
+  .stats p {
+    text-transform: uppercase;
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--color-mainHeadingStats-white);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
