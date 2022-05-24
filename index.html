@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="./style.css" type="text/css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Stats preview card component</title>
-  </head>
-  <body>
-    <div class="mainBackground">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Stats preview card component</title>
+</head>
+<body>
+  <!-- Black main background-1440px-desktop -->
+  <div class="mainBackground">
+    <div class="organizer">
       <main class="container">
         <header class="headerContainer">
-          <img
-            id="heroImg"
-            src="./images/image-header-mobile.jpg"
-            alt="Hero Image"
-          />
+          <img id="heroImg" src="./images/image-header-mobile.jpg" alt="Hero Image" />
           <div id="accentLayer"></div>
         </header>
-        <div class="organizer">
-          <div class="contentBox">
-            <h1>
-              Get<span class="hilightWord">insights</span>that help your
-              business grow.
-            </h1>
-            <p>
-              Discover the benefits of data analytics and make better decisions
-              regarding revenue, customer experience, and overall efficiency.
-            </p>
-          </div>
+        <!-- ORGANIZER WAS HERE -->
+        <div class="contentBox ">
+          <h1>
+            Get<span class="hilightWord"> insights </span> that help your
+            business grow.
+          </h1>
+          <p class="description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <!-- Statics and report section -->
           <div class="stats">
             <div class="companies">
               <h2>10k+</h2>
@@ -51,13 +43,14 @@
             </div>
           </div>
         </div>
-      </main>
-      <footer class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/fa125had">fa125had</a>.
-      </footer>
     </div>
-  </body>
+    </main>
+    <footer class="attribution">
+      <p>Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+          href="https://github.com/fa125had">fa125had</a>.
+      </p>
+    </footer>
+  </div>
+</body>
 </html>
