@@ -115,7 +115,6 @@ body {
 #heroImg {
     display: block;
     max-width: 100%;
-    min-width: fit-content;
 }
 
 #accentLayer {
@@ -142,7 +141,7 @@ body {
     color: var(--color-mainPragraph-slightlyTransparent);
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1439px) {
     * {
         padding: 0;
         margin: 0;
@@ -158,6 +157,7 @@ body {
     .organizer {
         height: 95%;
         max-width: 375px;
+        overflow: scroll;
     }
 
     .container {
@@ -166,11 +166,10 @@ body {
         border-top-right-radius: 0.5rem;
         border-top-left-radius: 0.5rem;
         border-bottom-right-radius: 0;
-    }
 
+    }
     .headerContainer img {
-        max-width: 100%;
-        width: auto;
+        display: block;
         max-height: 20rem;
     }
 
